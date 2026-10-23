@@ -2,6 +2,8 @@
 
 最简单的用法：在 Mac Finder 中双击 [一键更新止跌监测.command](一键更新止跌监测.command)。它会自动取最近一个**已经完整收盘**的美股交易日、下载 SOXX/LRCX/MU/SMH/SPY 日线、更新历史统计，并打开一页中文状态表。首次打开若 macOS 提示来源不明，可右键文件选择「打开」。
 
+如果是从 GitHub 下载或克隆后使用，网页上传可能使 `.command` 失去可执行权限；首次在该目录的 Terminal 运行 `chmod +x "一键更新止跌监测.command"`，此后即可双击。当前电脑上的原文件已具备可执行权限，不用重复操作。
+
 运行后会在本机生成 `backtest_output/latest_status.html`，文字版为 `backtest_output/latest_status.md`。状态分三种：
 
 - `止跌候选已触发`：数据日期正好是目标收盘日，且规则满足；若按规则交易，最早下一交易日开盘执行。
