@@ -1,0 +1,20 @@
+# Local project mirror and generated research output
+AGENTS.md
+sources/
+backtest_output/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local data exports, credentials, and environment files
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+*.sqlite*
+*.pem
+*.key
+.env
+.env.*
+.venv/
+venv/
